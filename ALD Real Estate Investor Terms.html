@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ALD Real Estate Investor Terms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Libre+Franklin:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#e8eff5;--ink:#0b2239;--mute:#47607a;--card:#fff;--line:#b9c9d8;--hi:#f2a900;--hit:#8a5a00;--hero:#0b2239;--herot:#f4f8fb;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#081a2b;--ink:#e6eef6;--mute:#8fa8c0;--card:#0f2740;--line:#24425f;--hit:#f2a900;--hero:#05111d}}
+:root[data-theme="dark"]{--bg:#081a2b;--ink:#e6eef6;--mute:#8fa8c0;--card:#0f2740;--line:#24425f;--hit:#f2a900;--hero:#05111d}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 "Libre Franklin",system-ui,sans-serif}
+.hero{background:var(--hero);color:var(--herot);padding:56px 20px 40px;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:32px 32px}
+.wrap{max-width:1080px;margin:0 auto}
+.hero small{display:block;font-weight:500;color:var(--hi);letter-spacing:.04em;margin-bottom:8px}
+h1{font:900 clamp(52px,13vw,148px)/.86 "Big Shoulders Display",Impact,sans-serif;margin:0;text-transform:uppercase;letter-spacing:-.01em}
+h1 span{display:block;color:var(--hi)}
+.hero p{max-width:52ch;color:#b9cde0;margin:20px 0 0}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:2px solid var(--ink);padding:12px 20px}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+input{flex:1 1 220px;font:inherit;padding:11px 14px;border:2px solid var(--ink);background:var(--card);color:var(--ink);border-radius:0}
+input:focus-visible,button:focus-visible{outline:3px solid var(--hi);outline-offset:2px}
+.chips{display:flex;gap:6px;overflow-x:auto;flex:1 1 100%;padding-bottom:2px}
+button{font:500 14px "Libre Franklin",sans-serif;padding:7px 12px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;white-space:nowrap;border-radius:0}
+button[aria-pressed=true]{background:var(--hi);border-color:var(--hi);color:#0b2239;font-weight:700}
+main{padding:12px 20px 60px}
+section{margin-top:44px}
+section h2{font:900 clamp(34px,6vw,60px)/1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;margin:0;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:6px solid var(--hi);padding-bottom:6px}
+section h2 em{font:500 14px "Libre Franklin",sans-serif;text-transform:none;color:var(--mute);font-style:normal}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:16px}
+.t{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--ink);padding:12px 14px}
+.t.n{border-left-color:var(--hi)}
+.t b{display:block;font:700 17px/1.25 "Libre Franklin",sans-serif}
+.t span{display:block;color:var(--mute);margin-top:4px;font-size:15px}
+.t i{font:700 11px "Libre Franklin",sans-serif;font-style:normal;background:var(--hi);color:#0b2239;padding:1px 6px;margin-left:8px;vertical-align:2px}
+.four{background:var(--hero);color:var(--herot);padding:28px 20px;margin-top:44px;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:32px 32px}
+.four h2{font:900 clamp(34px,7vw,72px)/.95 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;margin:0 0 6px}
+.four p{color:#b9cde0;margin:0 0 18px}
+.pill{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.pill div{border:2px solid var(--hi);padding:14px}
+.pill h3{font:900 30px/1 "Big Shoulders Display",Impact,sans-serif;text-transform:uppercase;color:var(--hi);margin:0 0 6px}
+.pill q{display:block;font-weight:500;quotes:none}
+.pill small{display:block;color:#9fb6cb;margin-top:6px;font-size:13px}
+.none{display:none;padding:40px 0;color:var(--mute)}
+footer{padding:0 20px 40px;color:var(--mute);font-size:14px}
+</style></head><body>
+<header class="hero"><div class="wrap">
+<small>Field guide for wholesalers, flippers &amp; landlords</small>
+<h1>ALD Real Estate<span>Investor Terms</span></h1>
+<p><b id="count"></b> terms you need to talk to sellers, size up deals, and close them. Items tagged <b style="color:var(--hi)">New</b> were added to fill gaps.</p>
+</div></header>
+<div class="bar"><div class="wrap">
+<input id="q" type="search" placeholder="Search a term or definition" aria-label="Search terms">
+<div class="chips" id="chips"></div></div></div>
+<main class="wrap" id="main"></main>
+<div class="wrap"><p class="none" id="none">No match. Try a shorter word.</p></div>
+<footer class="wrap">ALD Real Estate Investor Terms. General education, not legal or financial advice. Rules like the 70% Rule and 1% Rule are guidelines, not guarantees.</footer>
+<script>
+const D=[
+["Property & Valuation","How deals get priced",[
+"ARV (After Repair Value)::The estimated value of the property after renovations.",
+"As-Is Value::The property's current market value in its existing condition.",
+"BPO (Broker Price Opinion)::A value estimate prepared by a real estate agent.",
+"CMA (Comparative Market Analysis)::A comparison of similar recently sold properties.",
+"FMV (Fair Market Value)::The price a property would likely sell for on the open market.",
+"Comps::Comparable properties used to estimate value.",
+"Equity::The owner's ownership value after subtracting debt.",
+"*Appraisal::A formal value opinion by a licensed appraiser, usually required by lenders.",
+"*MAO (Maximum Allowable Offer)::The most you can pay and still hit your profit target.",
+"*70% Rule::Flip guideline: pay no more than 70% of ARV minus repair costs.",
+"*Scope of Work (SOW)::Itemized list of repairs with cost estimates.",
+"*Holding Costs::Taxes, insurance, utilities and interest paid while you own the property.",
+"*Closing Costs::Fees paid at closing: title, escrow, recording, lender and agent fees.",
+"*NOI (Net Operating Income)::Rental income minus operating expenses, before loan payments.",
+"*Cap Rate::NOI divided by property value. Measures return without financing.",
+"*Cash Flow::Money left each month after all expenses and loan payments.",
+"*Cash-on-Cash Return::Annual pre-tax cash flow divided by the cash you invested.",
+"*ROI (Return on Investment)::Profit as a percentage of what you put in.",
+"*1% Rule::Guideline: monthly rent should be at least 1% of the purchase price.",
+"*GRM (Gross Rent Multiplier)::Price divided by annual gross rent. A quick comparison metric."]],
+["Seller Situations","Who is likely to sell and why",[
+"Motivated Seller::A seller who wants or needs to sell quickly.",
+"Absentee Owner::An owner who doesn't live at the property.",
+"Tired Landlord::A landlord who no longer wants to manage rental property.",
+"Vacant Property::A property that is unoccupied.",
+"Inherited Property::Property received through inheritance.",
+"Probate::The legal process of transferring a deceased person's estate.",
+"Pre-Foreclosure::The homeowner has defaulted, but the property hasn't been foreclosed yet.",
+"Foreclosure::The lender has taken ownership due to missed mortgage payments.",
+"Tax Delinquent::Property taxes are overdue.",
+"Code Violations::The property doesn't comply with local building or maintenance codes.",
+"Distressed Property::A property needing significant repairs or facing financial/legal issues.",
+"*Lis Pendens::A public notice that a lawsuit, often foreclosure, involves the property.",
+"*REO (Real Estate Owned)::A property owned by the bank after a failed foreclosure auction.",
+"*Short Sale::Sale for less than the mortgage balance, with lender approval.",
+"*FSBO (For Sale By Owner)::A seller listing without an agent.",
+"*Expired Listing::A listing that ended without selling. The owner may still want out.",
+"*Divorce Sale::Property sold because a couple is splitting assets.",
+"*Tenant-Occupied::A property with a renter living there, which affects access and offers.",
+"*Relocation Seller::An owner moving for work or family who needs a fast sale."]],
+["Repairs & Investing","What the house needs and what it costs",[
+"Rehab::Renovation or repairs.",
+"Light Rehab::Cosmetic repairs.",
+"Full Gut Rehab::Extensive renovation down to the framing or major systems.",
+"Deferred Maintenance::Repairs that have been postponed.",
+"Turnkey::Ready to move in or rent with little or no work needed.",
+"CapEx (Capital Expenditures)::Major improvements like roofs, HVAC, or foundations.",
+"*Punch List::Final small fixes before a project is called done.",
+"*Change Order::A change to the agreed scope or price of a renovation.",
+"*Permits::Official approval from the city or county to do certain work.",
+"*Home Inspection::A professional review of a property's condition and defects.",
+"*General Contractor (GC)::The professional who manages a rehab and its subcontractors.",
+"*Curb Appeal::How attractive the property looks from the street."]],
+["Investing Strategies","Ways to make money on a deal",[
+"Wholesale::Assigning a purchase contract to another buyer for a fee.",
+"Assignment Fee::The wholesaler's profit.",
+"Fix & Flip::Buying, renovating, and reselling for profit.",
+"Buy & Hold::Purchasing property to keep as a long-term rental.",
+"BRRRR::Buy, Rehab, Rent, Refinance, Repeat.",
+"Cash Buyer::Someone purchasing without mortgage financing.",
+"*Wholetail::Buying cheap, doing light cleanup, and selling on the open market.",
+"*Short-Term Rental (STR)::Renting by the night or week, like Airbnb.",
+"*Lease Option::Renting with the right to buy at a set price later.",
+"*Land Banking::Holding raw land for future appreciation.",
+"*Joint Venture (JV)::Partnering with another investor on a deal and splitting profit.",
+"*Creative Finance::Deals structured outside a normal bank loan, such as sub-to or seller financing.",
+"*Appreciation::Increase in a property's value over time.",
+"*Exit Strategy::Your plan for how you'll get out of the deal and get paid."]],
+["Contracts & Closing","Paper, title and the finish line",[
+"EMD (Earnest Money Deposit)::Money deposited to show serious intent to buy.",
+"Title Company::Handles title searches, escrow, and closing.",
+"Escrow::Funds and documents held until closing.",
+"Lien::A legal claim against the property for unpaid debts.",
+"Cloud on Title::An issue affecting clear ownership.",
+"Closing::The final transfer of ownership.",
+"Deed::The legal document transferring ownership.",
+"*Purchase & Sale Agreement (PSA)::The contract between buyer and seller.",
+"*Assignment of Contract::The document that transfers your buying rights to an end buyer.",
+"*Double Close::Two back-to-back closings: you buy, then immediately sell to your buyer.",
+"*Contingency::A condition that must be met or the buyer can walk, such as inspection or financing.",
+"*Inspection / Due Diligence Period::Window to check the property and exit the contract.",
+"*Title Search::A review of public records for liens, owners and defects.",
+"*Title Insurance::Protection against title problems found after closing.",
+"*Clear Title::Ownership with no liens or disputes.",
+"*Quitclaim Deed::Transfers whatever interest the seller has, with no guarantees.",
+"*Warranty Deed::Transfers ownership and guarantees the title is clean.",
+"*Proof of Funds (POF)::A bank statement or letter showing you can pay.",
+"*Memorandum of Contract::A short recorded notice that you have the property under contract.",
+"*Novation::Replacing one party in a contract with another, with everyone's agreement.",
+"*Closing Statement (HUD/ALTA)::The itemized sheet of every dollar going in and out at closing."]],
+["Financing","Where the money comes from",[
+"LTV (Loan-to-Value)::Loan amount compared to the property's value.",
+"DSCR (Debt Service Coverage Ratio)::Measures whether rental income covers loan payments.",
+"Hard Money Loan::A short-term loan based primarily on the property's value.",
+"Subject-To (Sub-To)::Buying a property while leaving the existing mortgage in place.",
+"Seller Financing::The seller finances the purchase instead of a bank.",
+"*Private Money::Loans from individuals you know, on terms you negotiate.",
+"*Transactional Funding::Same-day funds to cover the first leg of a double close.",
+"*Points::Upfront lender fees. One point equals 1% of the loan.",
+"*Cash-Out Refinance::A new, larger loan that pays off the old one and gives you the difference.",
+"*Due-on-Sale Clause::Lets a lender demand full payoff when the property is sold or transferred.",
+"*Balloon Payment::A large lump sum due at the end of a loan term.",
+"*Wraparound Mortgage::A new loan that includes the existing mortgage underneath it.",
+"*HELOC::A revolving credit line secured by home equity.",
+"*Bridge Loan::Short-term financing to cover a gap until permanent funding arrives.",
+"*Gap Funding::Extra money that covers the difference between a loan and the cash needed."]],
+["Cold Calling & Acquisitions","Finding sellers and getting to yes",[
+"Lead::A potential seller.",
+"Qualified Lead::A seller who meets your buying criteria.",
+"Disposition::Selling or assigning a contracted property to an end buyer.",
+"Acquisition::Purchasing a property.",
+"Follow-Up::Recontacting a seller after the initial conversation.",
+"Motivation::The reason the seller wants to sell.",
+"Timeline::When the seller wants to sell.",
+"Price Expectation::The seller's desired sale price.",
+"*Cold Calling::Phoning property owners who haven't contacted you first.",
+"*Skip Tracing::Finding an owner's phone number or address from public and paid data.",
+"*Driving for Dollars::Driving neighborhoods to spot distressed or vacant properties.",
+"*Direct Mail::Letters or postcards sent to targeted owners.",
+"*List Stacking::Combining lists, such as absentee and tax delinquent, to find the most motivated owners.",
+"*Warm / Hot Lead::A seller showing interest (warm) or ready to talk price now (hot).",
+"*Objection Handling::Responding to a seller's concerns without being pushy.",
+"*Rapport::The trust you build so a seller opens up.",
+"*Appointment Set::A scheduled call or visit to talk about the property.",
+"*Walkthrough::Viewing the property in person to confirm condition.",
+"*Offer / Counteroffer::Your price to the seller, and their price back to you.",
+"*Buy Box::The type, location and price of deals you'll buy.",
+"*Cash Buyers List::Your database of investors ready to buy your deals.",
+"*DNC (Do Not Call)::Registry and internal lists of numbers you must not call. Scrub your lists.",
+"*Drip Campaign::Repeated, scheduled follow-up over weeks or months.",
+"*Lead Source::Where a lead came from, so you know what marketing works."]]
+];
+const P=[["Condition","What repairs or updates does the property need?","Gets you your repair estimate and ARV math."],
+["Timeline","When are you looking to sell?","Shows urgency and how much room you have."],
+["Motivation","Why are you considering selling?","The real driver. Listen more than you talk."],
+["Price","What price are you hoping to get?","Compare to your MAO before you commit."]];
+const $=s=>document.querySelector(s);let cat="All",total=0;
+D.forEach(c=>total+=c[2].length);$("#count").textContent=total+"+";
+const chips=$("#chips");["All",...D.map(d=>d[0]),"Four Pillars"].forEach(n=>{const b=document.createElement("button");b.textContent=n;b.setAttribute("aria-pressed",n==="All");b.onclick=()=>{cat=n;[...chips.children].forEach(x=>x.setAttribute("aria-pressed",x===b));render()};chips.appendChild(b)});
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+function render(){const q=$("#q").value.trim().toLowerCase();let h="",shown=0;
+D.forEach((c,i)=>{if(cat!=="All"&&cat!==c[0])return;
+const items=c[2].filter(x=>!q||x.toLowerCase().includes(q));if(!items.length)return;shown+=items.length;
+h+=`<section><h2>${esc(c[0])}<em>${c[1]}</em></h2><div class="grid">`+items.map(x=>{const n=x[0]==="*",[t,d]=(n?x.slice(1):x).split("::");return`<div class="t${n?" n":""}"><b>${esc(t)}${n?"<i>New</i>":""}</b><span>${esc(d)}</span></div>`}).join("")+`</div></section>`});
+if(cat==="All"||cat==="Four Pillars"){if(!q||"four pillars condition timeline motivation price qualifying".includes(q)){shown++;
+h+=`<div class="four"><div class="wrap"><h2>The Four Pillars of Qualifying a Seller</h2><p>Every call comes back to these four questions.</p><div class="pill">`+P.map(p=>`<div><h3>${p[0]}</h3><q>${p[1]}</q><small>${p[2]}</small></div>`).join("")+`</div></div></div>`}}
+$("#main").innerHTML=h;$("#none").style.display=shown?"none":"block"}
+$("#q").oninput=render;render();
+</script></body></html>
